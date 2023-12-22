@@ -49,6 +49,11 @@ using Spotify Connect.
 
 # Hardware
 Spotbox is build with a Raspberry Zero 2 W, an RC522 RFID scanner, some push bottons, a 10mAh power bank and an USB-C socket.
+
+Be aware, that the Raspberry Zero 2 W small and quite energy efficient - it does not have an audio jack, though. In my
+case I wanted to integrated it with out existing bluetooth speaker anyhow - if you are planning to connect a speaker via
+audio jack, you might want to choose another Raspberry model right from the beginning
+
 ## Buttons
 Currently four buttons are supported for Boot/Shutdown, Next, Previous and Play/Pause. They are wired as follows:
 
@@ -222,6 +227,7 @@ systemctl --user enable spotifyd.service
 In order to use spotbox, you need to create a Spotify developer account and create a development app.
 Visit https://developer.spotify.com/dashboard in order to do so.
 ![spotify.png](docs/spotify.png)
+(Client ID and Client Secret in the screenshot are just for demo purposes and not actually valid)
 
 # Configure Spotbox
 Spotbox is configured in the file `~/.config/spotbox/spotbox.conf`:
