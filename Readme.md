@@ -85,6 +85,13 @@ to enable and disable the RFID programatically. This will help to safe some Mill
 
 Do not forget to activate SPI in `raspi-config`!
 
+## RFID card holder
+I created a simple RFID card holder as well, which can be found here: https://www.thingiverse.com/thing:6395440
+
+<p align="center">
+  <img width="460" src="docs/card_holder.jpg">
+</p>
+
 # Installation
 ## General dependencies
 `sudo apt-get install git vim checkinstall curl evtest`
