@@ -5,9 +5,6 @@ import time
 from SpotBox.Events import post_event, subscribe
 import logging
 
-track_uri = 'spotify:track:1or6RDFkPMi3u4KM2LUBr3'
-album_uri = 'spotify:album:3Q9wXhEAX7NYCPP0hxIuDz'
-playlist_uri = 'spotify:playlist:3Q9wXhEAX7NYCPP0hxIuDz'
 
 
 class Spotify:

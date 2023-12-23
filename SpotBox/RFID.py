@@ -20,31 +20,7 @@ def deactivateRFID():
 
 
 class RFID:
-    map = {
-        "978992893595": "https://open.spotify.com/intl-de/album/1NKbpYxGsk0VEfXv3q2Gpo?si=SLxLd0nfSjiDbBTv66YUJA",
-        # Bielke singen für 2
-        "78466338031": "https://open.spotify.com/intl-de/album/3bV1m0EaVEuypHDFBRKJZV?si=AFAJsPnETge_yRlDxtGdRA",
-        # Eliot Finsterwald
-        "357958438068": "https://open.spotify.com/intl-de/album/4yXo0Hz2jOpW7X3drwiyTq?si=5tjd1GQlRAmeUFeMLZL6uw",
-        # Meerfellfreunde
-        "356685073413": "https://open.spotify.com/intl-de/album/1YF2DKgFdvXItvrZmdxssn?si=H77zYCSZSb2nGmr9B-0AFA",
-        # Paw Mighty Kino
-        "771738277286": "https://open.spotify.com/intl-de/album/6IufIUBhICqJv7Ex5SjX8k?si=tMC5n9zeTnyCswBQCJJXIg",
-        # 16 horse sackcloth
-        "78156745965": "https://open.spotify.com/intl-de/album/76vW9dCZzixuVIwW1NZtom?si=D0O2xO09SsS_MKcoEiRjbQ",
-        # peter und der wolf
-        "218922241102": "https://open.spotify.com/intl-de/album/4m2880jivSbbyEGAKfITCa?si=QJVo9DYdTLKILbj3tTPLMA",
-        # daft punk random access
-        "1037423297792": "https://open.spotify.com/intl-de/album/0Tq272YaJbK0hH9vyEZBbm?si=eV0JJQ6aSWySlBqARM_HmA"
-        # danger dan
-        #        "": "",
-        #        "": "",
-        #        "": "",
-        #        "": "",
-        #        "": "",
-        #        "": "",
-        #        "": "",
-    }
+    map = {}
 
     lastSeenTag = None
     lastSeenTime = 0
@@ -65,8 +41,7 @@ class RFID:
         logging.info("RFID detected: {}".format(id))
 
         if self.lastSeenTag == id and self.lastSeenTime + 5 >= time.time():
-            print("Skipping, already known")
-            logging.info("Skipping RFID, same as before")
+            logging.debug("Skipping RFID, same as before")
             self.lastSeenTime = time.time()
             return
 

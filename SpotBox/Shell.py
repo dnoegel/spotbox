@@ -64,21 +64,3 @@ class Shell:
 
         return result
 
-# bluetoothctl info 40:C1:F6:D6:8C:8D
-
-# Device 40:C1:F6:D6:8C:8D (public)
-#	Name: JBL Charge 5
-#	Alias: JBL Charge 5
-#	Class: 0x00240414
-#	Icon: audio-card
-#	Paired: yes
-#	Trusted: yes
-#	Blocked: no
-#	Connected: no
-#	LegacyPairing: no
-#	UUID: Audio Sink                (0000110b-0000-1000-8000-00805f9b34fb)
-#	UUID: A/V Remote Control Target (0000110c-0000-1000-8000-00805f9b34fb)
-#	UUID: Advanced Audio Distribu.. (0000110d-0000-1000-8000-00805f9b34fb)
-#	UUID: A/V Remote Control        (0000110e-0000-1000-8000-00805f9b34fb)
-#	UUID: Generic Attribute Profile (00001801-0000-1000-8000-00805f9b34fb)
-#	UUID: Vendor specific           (65786365-6c70-6f69-6e74-2e04ff402001)

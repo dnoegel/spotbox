@@ -13,6 +13,7 @@
 # PERFORMANCE OF THIS SOFTWARE.
 
 ## Source: https://github.com/srstevenson/xdg-base-dirs/blob/main/src/xdg_base_dirs/__init__.py
+
 ## Had to directly include this as I could not install this via Pip
 
 import os

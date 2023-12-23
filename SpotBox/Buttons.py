@@ -1,4 +1,3 @@
-
 import RPi.GPIO as GPIO
 from SpotBox.Spotify import Spotify
 import logging

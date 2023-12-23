@@ -107,8 +107,7 @@ pip3 install xdg-base-dirs  # Find default directories
 pip3 install pygobject      # Main loop for e.g. DBUS events
 pip3 install pyudev         # Register to device events
 
-pip3 install spidev
-pip3 install mfrc522
+pip3 install mfrc522        # Read RFID cards
 ```
 
 ## Install Spotbox
@@ -116,7 +115,7 @@ Install spotbox by cloning this repository:
 
 ```
 cd ~
-git clone REPO
+git clone https://github.com/dnoegel/spotbox.git
 ```
 
 This will clone spotbox to `~/spotbox` in your home directory. This path is also used in the below examples. 
