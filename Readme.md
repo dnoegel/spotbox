@@ -92,6 +92,9 @@ I created a simple RFID card holder as well, which can be found here: https://ww
   <img width="460" src="docs/card_holder.jpg">
 </p>
 
+## Push buttons
+For the push buttons I 3D printed this [thingiverse design](https://www.thingiverse.com/thing:4312215) from user [bert_lz](https://www.thingiverse.com/bert_lz/designs).
+
 # Installation
 ## General dependencies
 `sudo apt-get install git vim checkinstall curl evtest`
